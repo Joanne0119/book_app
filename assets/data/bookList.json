@@ -1,0 +1,42 @@
+[
+  {
+    "title" : "Popular Books",
+    "horizontal" : "true",
+    "data" : [
+      {
+        "book_title" : "Fashionopolis",
+        "author" : "Dana Thomas",
+        "cover_image" : "../../assets/image/Fashionopolis.png"
+      },{
+        "book_title" : "Chanel",
+        "author" : "Patrick Mauriès",
+        "cover_image" : "../../assets/image/Chanel.png"
+      },{
+        "book_title" : "Calligraphy",
+        "author" : "June & Lucy",
+        "cover_image" : "../../assets/image/Calligraphy.png"
+      }
+    ]
+  },{
+    "title" : "Newest",
+    "horizontal" : "false",
+    "data" : [
+      {
+        "book_title" : "Yves Saint Laurent",
+        "author" : "Suzy Menkes",
+        "star" : 4,
+        "cover_image" : "../../assets/image/Yves Saint Laurent.png"
+      },{
+        "book_title" : "The Book of Signs",
+        "author" : "Rudolf Koch ",
+        "star" : 3,
+        "cover_image" : "../../assets//image/The Book of Signs.png"
+      },{
+        "book_title" : "Stitched Up",
+        "author" : "Tansy E. Hoskins",
+        "star" : 3,
+        "cover_image" : "../../assets/image/Stitched Up.png"
+      }
+    ]
+  }
+]
