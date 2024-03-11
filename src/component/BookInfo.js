@@ -22,7 +22,8 @@ const styles = StyleSheet.create ({
     width: 150,
     height: 200,
     borderRadius: 10,
-    marginBottom: 6
+    marginBottom: 6,
+    resizeMode: 'cover'
   }
 });
 
