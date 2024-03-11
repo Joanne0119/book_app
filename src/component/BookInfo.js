@@ -4,8 +4,8 @@ const BookInfo = ({ book }) => {
   return (
     <View>
       <Image 
-        source={book.cover_image}
-        style={{width: 100, height: 150}}
+        source={{uri: book.cover_image}}
+        style={styles.image}
       />
       <Text style={styles.title}>{book.book_title}</Text>
       <Text style={styles.author}>{book.author}</Text>
@@ -19,8 +19,8 @@ const styles = StyleSheet.create ({
     fontSize: 20
   },
   image: {
-    width: '100%',
-    aspectRatio: 1, //the height will automatically be caculated
+    width: 150,
+    height: 200,
     borderRadius: 10,
     marginBottom: 6
   }

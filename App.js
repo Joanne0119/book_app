@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import Header from './src/component/Header';
 import booklist from './assets/data/bookList.json'
 import BookList from './src/component/BookList';
@@ -9,8 +10,8 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar />
-      <Header />
-      <BookList section={booklist[0]}/>
+      <Header style={{ marginTop: StatusBar.currentHeight ?? 0 }}/>
+      <BookList />
       {/* <BookInfo book = {booklist[0].data[0]}/> */}
     </SafeAreaView>
   );
