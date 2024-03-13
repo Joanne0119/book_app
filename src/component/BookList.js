@@ -8,7 +8,6 @@ const BookList = ()  => {
 
   return(
     <View style={styles.container}>
-       <Header />
       <Text style={styles.title}>{bookList[0].title}</Text>
       <FlatList 
         horizontal={true}
@@ -38,7 +37,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
     paddingLeft: 25,
-    marginTop: 35
+    marginTop: 20
   }
 });
 

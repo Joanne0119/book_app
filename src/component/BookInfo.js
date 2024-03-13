@@ -2,25 +2,14 @@ import { View, Text, StyleSheet, Image} from 'react-native'
 import Star from './Star';
 
 const BookInfo = ({ book }) => {
-  if(book.section != 2){
-    return (
-      <View style={styles.containerStyle}>
-        <Image 
-          source={{uri: book.cover_image}}
-          style={styles.image}
-        />
-        <Text style={styles.title}>{book.book_title}</Text>
-        <Text style={styles.author}>{book.author}</Text>
-      </View>
-    )
-  }
   return (
     <View style={styles.containerStyle}>
       <Image 
         source={{uri: book.cover_image}}
         style={styles.image}
+        key={book.book_title}
       />
-      <Star star={book.star}/>
+      {book.starSection? <Star star={book.star} style={styles.star}/> : null}
       <Text style={styles.title}>{book.book_title}</Text>
       <Text style={styles.author}>{book.author}</Text>
     </View>
@@ -39,8 +28,8 @@ const styles = StyleSheet.create ({
     lineHeight: 20
   },
   image: {
-    width: 168,
-    height: 240,
+    width: 154,
+    height: 220,
     borderTopRightRadius: 6,
     borderBottomRightRadius: 6,
     marginBottom: 6,
@@ -52,6 +41,9 @@ const styles = StyleSheet.create ({
     color: "#131313",
     width: '100%',
     marginTop: 8
+  },
+  star: {
+    flex: 1
   }
 });
 

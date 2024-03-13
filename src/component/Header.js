@@ -17,11 +17,8 @@ export default function Header() {
 
 const styles = StyleSheet.create({
   header: {
-    borderColor: 'black',
-    borderStyle: 'solid',
-    borderWidth: 3,
     paddingHorizontal: 15,
-    paddingVertical: 20,
+    paddingVertical: 25,
     flexDirection: 'row',
     backgroundColor: '#fff',
     alignItems: 'flex-start',

@@ -11,6 +11,7 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <ScrollView>
         <StatusBar />
+        <Header />
         <BookList />
         {/* <BookInfo book = {booklist[0].data[0]}/> */}
       </ScrollView>

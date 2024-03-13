@@ -3,17 +3,17 @@
     "title" : "Popular Books",
     "data" : [
       {
-        "section" : 1,
+        "starSection" : false,
         "book_title" : "Fashionopolis",
         "author" : "Dana Thomas",
         "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/Fashionopolis.png?raw=true"
       },{
-        "section" : 1,
+        "starSection" : false,
         "book_title" : "Chanel",
         "author" : "Patrick Mauriès",
         "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/Chanel.png?raw=true"
       },{
-        "section" : 1,
+        "starSection" : false,
         "book_title" : "Calligraphy",
         "author" : "June & Lucy",
         "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/Calligraphy.png?raw=true"
@@ -23,19 +23,19 @@
     "title" : "Newest",
     "data" : [
       {
-        "section" : 2,
+        "starSection" : true,
         "book_title" : "Yves Saint Laurent",
         "author" : "Suzy Menkes",
         "star" : 4,
         "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/Yves%20Saint%20Laurent.png?raw=true"
       },{
-        "section" : 2,
+        "starSection" : true,
         "book_title" : "The Book of Signs",
         "author" : "Rudolf Koch ",
         "star" : 3,
         "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/The%20Book%20of%20Signs.png?raw=true"
       },{
-        "section" : 2,
+        "starSection" : true,
         "book_title" : "Stitched Up",
         "author" : "Tansy E. Hoskins",
         "star" : 3,
