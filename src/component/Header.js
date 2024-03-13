@@ -23,6 +23,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'flex-start',
     justifyContent: 'space-between',
-    width: '100%'
+    width: '100%',
   }
 });
