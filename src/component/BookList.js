@@ -7,21 +7,21 @@ const BookList = ()  => {
 
   return(
     <View style={styles.container}>
-      <Text>{bookList[0].title}</Text>
+      <Text style={styles.title}>{bookList[0].title}</Text>
       <FlatList 
         horizontal={true}
         data={bookList[0].data}
         renderItem={({item}) => <BookInfo book={item}/>}
         keyExtractor={item => item.book_title}
-        contentContainerStyle={{ paddingHorizontal: 15, paddingLeft: 0 }}
+        // contentContainerStyle={{ padding: 10 }}
       />
-      <Text>{bookList[1].title}</Text>
+      <Text style={styles.title}>{bookList[1].title}</Text>
       <FlatList 
         horizontal={true}
         data={bookList[1].data}
         renderItem={({item}) => <BookInfo book={item}/>}
         keyExtractor={item => item.book_title}
-        contentContainerStyle={{ paddingHorizontal: 16, paddingLeft: 0 }}
+        contentContainerStyle={{ padding: 10}}
       />
     </View>
   )
@@ -32,11 +32,15 @@ const styles = StyleSheet.create({
     borderColor: 'red',
     borderStyle: 'solid',
     borderWidth: 3,
-    flex: 1,
+    // flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'flex-start',
   },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+  }
 });
 
 
