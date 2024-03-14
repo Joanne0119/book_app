@@ -4,7 +4,7 @@ import BookInfo from './BookInfo';
 import bookList from '../../assets/data/bookList.json';
 import Header from './Header';
 
-const BookList = ()  => {
+const BookList = ({ navigation })  => {
 
   return(
     <View style={styles.container}>
@@ -12,7 +12,7 @@ const BookList = ()  => {
       <FlatList 
         horizontal={true}
         data={bookList[0].data}
-        renderItem={({item}) => <BookInfo book={item}/>}
+        renderItem={({item}) => <BookInfo book={item}  navigation={navigation} />}
         keyExtractor={item => item.book_title}
         // contentContainerStyle={{ padding: 10 }}
       />
@@ -20,7 +20,7 @@ const BookList = ()  => {
       <FlatList 
         horizontal={true}
         data={bookList[1].data}
-        renderItem={({item}) => <BookInfo book={item}/>}
+        renderItem={({item}) => <BookInfo book={item}  navigation={navigation} />}
         keyExtractor={item => item.book_title}
         contentContainerStyle={{ padding: 10}}
       />
@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+    marginHorizontal: 12,
   },
   title: {
     fontSize: 30,

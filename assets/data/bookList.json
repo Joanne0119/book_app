@@ -3,43 +3,55 @@
     "title" : "Popular Books",
     "data" : [
       {
+        "id" : 1,
         "starSection" : false,
         "book_title" : "Fashionopolis",
         "author" : "Dana Thomas",
-        "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/Fashionopolis.png?raw=true"
+        "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/Fashionopolis.png?raw=true",
+        "info" : "What should I wear? It’s one of the fundamental questions we ask ourselves every day. More than ever, we are told it should be something new. Today, the clothing industry churns out 80 billion garments a year and employs every sixth person on Earth. "
       },{
+        "id" : 2,
         "starSection" : false,
         "book_title" : "Chanel",
         "author" : "Patrick Mauriès",
-        "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/Chanel.png?raw=true"
+        "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/Chanel.png?raw=true",
+        "info" : "Almost 50 years after her death, Coco Chanel remains one of the world’s most influential fashion designers. Her story is one of creative brilliance and innovation - she was a driving force in freeing women from the restrictive clothing they had been obliged to wear for generations. ’In order to be irreplaceable, one must always be different, ’ Chanel would say, and throughout her life she demonstrated extraordinary passion and determination to change the world around her."
       },{
+        "id" : 3,
         "starSection" : false,
         "book_title" : "Calligraphy",
         "author" : "June & Lucy",
-        "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/Calligraphy.png?raw=true"
+        "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/Calligraphy.png?raw=true",
+        "info" : "In this practical manual, a noted calligraphy teacher offers a comprehensive, step-by-step guide for the student. Beginning with a brief but fascinating history of copperplate, she moves quickly to an in-depth examination of the alphabet, numbers, and punctuation. Each letter is demonstrated stroke by stroke with a clear explanation."
       }
     ]
   },{
     "title" : "Newest",
     "data" : [
       {
+        "id" : 4,
         "starSection" : true,
         "book_title" : "Yves Saint Laurent",
         "author" : "Suzy Menkes",
         "star" : 4,
-        "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/Yves%20Saint%20Laurent.png?raw=true"
+        "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/Yves%20Saint%20Laurent.png?raw=true",
+        "info" : "Discover Saint Laurent Official Online Store. Explore the latest collections of luxury handbags, ready to wear, shoes, leather goods and accessories for men."
       },{
+        "id" : 5,
         "starSection" : true,
         "book_title" : "The Book of Signs",
         "author" : "Rudolf Koch ",
         "star" : 3,
-        "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/The%20Book%20of%20Signs.png?raw=true"
+        "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/The%20Book%20of%20Signs.png?raw=true",
+        "info" : "Bestselling journalist Dana Thomas has traveled the globe to discover the visionary designers and companies who are propelling the industry toward that more positive future by reclaiming traditional craft and launching cutting-edge sustainable technologies to produce better fashion."
       },{
+        "id" : 6,
         "starSection" : true,
         "book_title" : "Stitched Up",
         "author" : "Tansy E. Hoskins",
         "star" : 3,
-        "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/Stitched%20Up.png?raw=true"
+        "cover_image" : "https://github.com/Joanne0119/book_app/blob/master/assets/image/Stitched%20Up.png?raw=true",
+        "info" : "Historically, the apparel trade has exploited labor, the environment, and intellectual property—and in the last three decades, with the simultaneous unfurling of fast fashion, globalization, and the tech revolution, those abuses have multiplied exponentially, primarily out of view."
       }
     ]
   }

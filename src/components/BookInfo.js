@@ -1,17 +1,21 @@
-import { View, Text, StyleSheet, Image} from 'react-native'
+import { View, Text, StyleSheet, Image, Pressable} from 'react-native'
 import Star from './Star';
 
-const BookInfo = ({ book }) => {
+const BookInfo = ({ book,  navigation}) => {
   return (
     <View style={styles.containerStyle}>
-      <Image 
-        source={{uri: book.cover_image}}
-        style={styles.image}
-        key={book.book_title}
-      />
-      {book.starSection? <Star star={book.star} style={styles.star}/> : null}
-      <Text style={styles.title}>{book.book_title}</Text>
-      <Text style={styles.author}>{book.author}</Text>
+      <Pressable
+        onPress={() => navigation.navigate('BookInfo', book)}
+      >
+        <Image 
+          source={{uri: book.cover_image}}
+          style={styles.image}
+          key={book.book_title}
+        />
+        {book.starSection? <Star star={book.star} style={styles.star}/> : null}
+        <Text style={styles.title}>{book.book_title}</Text>
+        <Text style={styles.author}>{book.author}</Text>
+      </Pressable>
     </View>
   )
 };
@@ -20,11 +24,10 @@ const styles = StyleSheet.create ({
   containerStyle: {
     marginHorizontal: 3,
     marginTop: 15,
-    paddingHorizontal: 15
   },
   title : {
     fontWeight: 'bold',
-    fontSize: 18,
+    fontSize: 17,
     lineHeight: 20
   },
   image: {
