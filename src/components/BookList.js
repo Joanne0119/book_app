@@ -14,7 +14,7 @@ const BookList = ({ navigation })  => {
         data={bookList[0].data}
         renderItem={({item}) => <BookInfo book={item}  navigation={navigation} />}
         keyExtractor={item => item.book_title}
-        // contentContainerStyle={{ padding: 10 }}
+        contentContainerStyle={{ padding: 20 }}
       />
       <Text style={styles.title}>{bookList[1].title}</Text>
       <FlatList 
@@ -22,7 +22,7 @@ const BookList = ({ navigation })  => {
         data={bookList[1].data}
         renderItem={({item}) => <BookInfo book={item}  navigation={navigation} />}
         keyExtractor={item => item.book_title}
-        contentContainerStyle={{ padding: 10}}
+        contentContainerStyle={{ padding: 20}}
       />
     </View>
   )
@@ -31,8 +31,7 @@ const BookList = ({ navigation })  => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    marginHorizontal: 12,
+    backgroundColor: '#fff'
   },
   title: {
     fontSize: 30,
