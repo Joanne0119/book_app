@@ -20,17 +20,17 @@ const BottomTabNavigator = () => {
             size = focused ? 25 : 20;
             // color = focused ? '#f0f' : '#555';
           } else if (route.name === 'Wishlist') {
-            iconName = 'wishlist';
+            iconName = 'nav_bookmark';
             size = focused ? 25 : 20;
             // color = focused ? '#f0f' : '#555';
           } else if (route.name === 'My Books') {
-            iconName = 'my_books';
+            iconName = 'mybook';
             size = focused ? 25 : 20;
             // color = focused ? '#f0f' : '#555';
           }
           return (
             <Image
-              source = {{uri: focused ? `https://github.com/Joanne0119/book_app/blob/master/assets/image/icon/icon_${iconName}_actived.png?raw=true`:`https://github.com/Joanne0119/book_app/blob/master/assets/image/icon/icon_${iconName}_actived.png?raw=true`}}
+              source = {{uri: focused ? `https://github.com/Joanne0119/book_app/blob/master/assets/image/icon/icon_${iconName}_actived.png?raw=true`:`https://github.com/Joanne0119/book_app/blob/master/assets/image/icon/icon_${iconName}.png?raw=true`}}
               style={{width: 25, height: 25, marginTop: 12}}
             />
           )
