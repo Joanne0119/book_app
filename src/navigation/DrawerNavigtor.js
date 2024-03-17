@@ -5,6 +5,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import BottomTabNavigator from './BottomTabNavigator'
 import AcountScreen from '../screens/AcountScreen'
 import SettingScreen from '../screens/SettingScreen'
+import CustomDrawer from './CustomDrawer';
 
 const Drawer = createDrawerNavigator();
 
@@ -12,14 +13,17 @@ const DrawerNavigtor = () => {
   return (
     <Drawer.Navigator
       screenOptions={({ route }) => ({
+        drawerActiveBackgroundColor: '#ece1fc',
+        drawerActiveTintColor: '#6200EE',
+        drawerInactiveTintColor: '#666',
         drawerIcon: ({ focused }) => {
           let iconName;
           if (route.name === 'Home') {
             iconName = 'home';
           } else if (route.name === 'Acount') {
-            iconName = 'acount';
+            iconName = 'account';
           } else if (route.name === 'Setting') {
-            iconName = 'setting';
+            iconName = 'settings';
           }
           return (
             <Image
@@ -29,14 +33,15 @@ const DrawerNavigtor = () => {
           )
         }
       })}
-      drawerOption={{
-        activeTintColor: '#6200EE',
-        inactiveTintColor: '#666',
-        showLabel: true,
-        labelStyle: { fontSize: 14, fontWeight: 500},
-        showIcon: true,
-      }}
-                                              
+      drawerContent={props => <CustomDrawer {...props} /> }
+      //   <View>
+      //     <Image 
+      //       source = {{uri: 'https://github.com/Joanne0119/book_app/blob/master/assets/image/icon/icon_img_avatar_actived.png?raw=true'}}
+      //       style={{width: 48, height: 48}}
+      //     />
+      //     <Text>May</Text>
+      //   </View>
+      // }                                        
     >
       <Drawer.Screen name="Home" component={BottomTabNavigator} options={{headerTitle: ''}}/>
       <Drawer.Screen name="Acount" component={AcountScreen} />
