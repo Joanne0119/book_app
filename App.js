@@ -14,8 +14,6 @@ export default function App() {
         <Navigation />
       </SafeAreaView>
     </SafeAreaProvider>
-    
-    
   );
 }
 
