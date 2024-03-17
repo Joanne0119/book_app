@@ -1,19 +1,30 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Pressable, Image } from 'react-native';
 
-export default function Header() {
+export default function Header({navigation}) {
   return (
-    <View style={styles.header}></View>
+    <View style={styles.header}>
+      <Pressable onPress={() => navigation.toggleDrawer()}>
+        <Image 
+          source={{uri: 'https://github.com/Joanne0119/book_app/blob/master/assets/image/icon/nav_icon.png?raw=true'}}
+          style={{width: 24, height: 24, margin: 20}}
+        />
+      </Pressable>
+      <Pressable>
+        <Image 
+          source={{uri: 'https://github.com/Joanne0119/book_app/blob/master/assets/image/icon/search_icon.png?raw=true'}}
+          style={{width: 24, height: 24, margin: 20}}
+        />
+      </Pressable>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   header: {
-    paddingHorizontal: 15,
-    paddingVertical: 25,
-    flexDirection: 'row',
+    paddingHorizontal: 20,
+    paddingVertical: 15,
     backgroundColor: '#fff',
-    alignItems: 'flex-start',
-    justifyContent: 'space-between',
-    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'space-between'
   }
 });

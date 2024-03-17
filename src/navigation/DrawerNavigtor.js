@@ -12,7 +12,8 @@ const Drawer = createDrawerNavigator();
 const DrawerNavigtor = () => {
   return (
     <Drawer.Navigator 
-      drawerContent={props => <CustomDrawer {...props} /> }  
+      drawerContent={props => <CustomDrawer {...props} /> } 
+      screenOptions={{headerShown: false}} 
     >
       <Drawer.Screen name="Home" component={BottomTabNavigator} 
         options={{

@@ -1,9 +1,11 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import Header from '../components/Header'
 
-const AcountScreen = () => {
+const AcountScreen = ({navigation}) => {
   return (
     <View>
+      <Header navigation={navigation}/>
       <Text>AcountScreen</Text>
     </View>
   )

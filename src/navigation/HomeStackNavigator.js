@@ -14,8 +14,7 @@ const HomeStackNavigator = () => {
         <Stack.Screen name="Home Page" component={HomeScreen} options={{headerShown: false}}/>
         <Stack.Screen name="BookInfo" component={BookInfoScreen} 
           options={{
-            header: (props) => <CustomStackHeader {...props} />,
-            drawer: () => null
+            headerShown: false
           }}
         />
       </Stack.Navigator>
