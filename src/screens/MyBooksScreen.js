@@ -4,7 +4,7 @@ import React from 'react'
 const MyBooksScreen = () => {
   return (
     <View>
-      <Text>Screen</Text>
+      <Text>My Books</Text>
     </View>
   )
 }
