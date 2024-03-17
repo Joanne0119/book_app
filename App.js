@@ -12,11 +12,6 @@ export default function App() {
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
         <Navigation />
-        {/* <StatusBar />
-        <Header />
-        <ScrollView>
-          <BookList />
-        </ScrollView> */}
       </SafeAreaView>
     </SafeAreaProvider>
     

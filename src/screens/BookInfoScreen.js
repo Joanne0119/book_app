@@ -6,6 +6,11 @@ import bookList from "../../assets/data/bookList.json"
 const BookInfoScreen = ({ route, navigation }) => { 
   return (
     <ScrollView>
+      <Pressable onPress={() => navigation.goBack()}>
+        <Text style={{ marginLeft: 20, marginTop: 20, textDecorationLine:'underline' }}>
+          Go Back
+        </Text>
+      </Pressable>
       <View  style={styles.containerStyle}>
         <Image 
           source={{uri: route.params.cover_image}}
