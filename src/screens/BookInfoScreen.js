@@ -1,9 +1,10 @@
 import React from "react";
 import { View, Text, Image, StyleSheet, Pressable, ScrollView} from "react-native";
+import Star from "../components/Star";
 
 const BookInfoScreen = ({ route, navigation }) => { 
   return (
-    <ScrollView>
+    <ScrollView style={{backgroundColor: '#fff'}}>
       <Pressable onPress={() => navigation.goBack()}>
         <Text style={{ marginLeft: 20, marginTop: 20, textDecorationLine:'underline' }}>
           Go Back
@@ -17,10 +18,11 @@ const BookInfoScreen = ({ route, navigation }) => {
         />
         <Text style={styles.title}>{route.params.book_title}</Text>
         <Text style={styles.author}>{route.params.author}</Text>
+        {route.params.starSection? <Star star={route.params.star} style={styles.star}/> : null}
         <Text style={styles.text}>{route.params.info}</Text>
         <Pressable style={styles.button}>
           <Text style={{color: '#fff', fontSize: 18}}>
-            Add to BookList
+            Buy Now For $49.99
           </Text>
         </Pressable>
       </View>
