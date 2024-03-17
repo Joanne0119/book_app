@@ -1,7 +1,5 @@
 import React from "react";
 import { View, Text, Image, StyleSheet, Pressable, ScrollView} from "react-native";
-import BookList from "../components/BookList";
-import bookList from "../../assets/data/bookList.json"
 
 const BookInfoScreen = ({ route, navigation }) => { 
   return (

@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, FlatList, SectionList } from 'react-native';
 import BookInfo from './BookInfo';
 import bookList from '../../assets/data/bookList.json';
-import Header from './Header';
 
 const BookList = ({ navigation })  => {
 

@@ -1,10 +1,8 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 export default function Header() {
   return (
-    <View style={styles.header}>
-      
-    </View>
+    <View style={styles.header}></View>
   );
 }
 

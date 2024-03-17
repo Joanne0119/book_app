@@ -1,4 +1,4 @@
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 import React from 'react';
 
 const Star = ({star}) => {
@@ -26,7 +26,6 @@ const Star = ({star}) => {
        
   return (
     <View>
-      {/* <Text>{star}</Text> */}
       <View style={styles.stars}>
         {stars}
       </View>
